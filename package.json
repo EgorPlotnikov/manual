@@ -1,0 +1,40 @@
+{
+  "name": "manual",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@blocknote/core": "^0.12.4",
+    "@blocknote/react": "^0.12.4",
+    "@nextui-org/skeleton": "^2.0.27",
+    "@tiptap-pro/extension-file-handler": "^2.8.0",
+    "@tiptap/extension-dropcursor": "^2.3.0",
+    "@tiptap/extension-image": "^2.3.0",
+    "@tiptap/extension-link": "^2.3.0",
+    "@tiptap/extension-placeholder": "^2.2.6",
+    "@tiptap/pm": "^2.2.6",
+    "@tiptap/react": "^2.2.6",
+    "@tiptap/starter-kit": "^2.2.6",
+    "autosize": "^6.0.1",
+    "axios": "^1.6.8",
+    "child_process": "^1.0.2",
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.5.0",
+    "next": "14.1.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-loading-skeleton": "^3.4.0",
+    "react-select": "^5.8.0",
+    "sass": "^1.74.1",
+    "swr": "^2.2.5",
+    "xmldom": "^0.6.0"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0"
+  }
+}

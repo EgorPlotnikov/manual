@@ -1,0 +1,32 @@
+.react-select-container {
+    width: 484px;
+}
+
+.react-select__value-container {
+    padding-left: 16px !important;
+}
+
+.buttons-dropdown-box {
+    display: flex;
+    gap: 32px;
+    margin-top: 16px;
+}
+
+@media (max-width: 1052px) {
+    .select-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 580px) {
+    .buttons-dropdown-box {
+        margin-top: 0;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .react-select-container {
+        width: 100%;
+        height: 48px;
+    }
+}

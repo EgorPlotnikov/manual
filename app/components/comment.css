@@ -1,0 +1,88 @@
+.comment {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.comment-info {
+    display: flex;
+    gap: 16px;
+}
+
+.comment-info p {
+    line-height: 20px;
+    color: var(--secondary-text);
+}
+
+.comment-vote {
+    display: flex;
+    gap: 16px;
+}
+
+.button-comment {
+    height: 32px;
+    /* background-color: var(--dark-grey); */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0px 12px 0px 12px;
+    border-radius: 20px;
+    border: solid 2px transparent;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+}
+
+.button-comment-good img {
+    background-color: var(--green);
+    border-radius: 20px;
+}
+
+.button-comment-bad img {
+    background-color: var(--red);
+    border-radius: 20px;
+}
+
+.button-comment-good:hover {
+    background-color: var(--background-green);
+}
+
+.button-comment-bad:hover {
+    background-color: var(--background-red);
+}
+
+.button-comment-good:active {
+    border-color: var(--green);
+}
+
+.button-comment-bad:active {
+    border-color: var(--red);
+}
+
+.button-comment-good-click {
+    border: solid 2px var(--green);
+}
+
+.button-comment-bad-click {
+    border: solid 2px var(--red);
+}
+
+@media (hover: none) {
+    .button-comment-good:hover {
+        background-color: var(--light-grey);
+    }
+    
+    .button-comment-bad:hover {
+        background-color: var(--light-grey);
+    }
+}
+
+@media (max-width: 580px) {
+    .button-comment {
+        background-color: var(--light-grey);
+        height: 40px;
+    }
+}

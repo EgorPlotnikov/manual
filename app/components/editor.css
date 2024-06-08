@@ -1,0 +1,14 @@
+.bn-container {
+    width: 800px;
+}
+
+.bn-container[data-color-scheme] {
+    --bn-colors-editor-background: var(--light-grey);
+    --bn-colors-side-menu: var(--secondary-text);
+    --bn-border-radius: 20px;
+    --bn-font-family: "Nunito Sans", sans-serif;
+}
+
+.bn-editor {
+    min-height: 300px;
+}

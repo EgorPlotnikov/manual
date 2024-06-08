@@ -1,0 +1,17 @@
+.link-box-info {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.link-box-info-rating {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+@media (max-width: 404px) {
+    .link-box-info-rating p {
+        display: none;
+    }
+}

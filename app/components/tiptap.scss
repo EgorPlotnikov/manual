@@ -1,0 +1,96 @@
+.ProseMirror:focus {
+    outline: none;
+    content: none;
+  }
+
+.tiptap {
+    width: 800px;
+    min-height: 320px;
+    padding: 10px 16px 10px 16px;
+    background-color: var(--light-grey);
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    > * + * {
+      margin-top: 0.75em;
+    }
+  
+    ul,
+    ol {
+      padding: 0 1rem;
+    }
+
+    img {
+        max-width: 752px;
+        max-height: 752px;
+        object-fit: contain;
+    }
+  }
+
+.tiptap .is-editor-empty:first-child::before {
+    color: var(--secondary-text);
+    content: attr(data-placeholder);
+    float: left;
+    height: 0;
+    pointer-events: none;
+}
+
+  
+  .bubble-menu {
+    display: flex;
+    background-color: var(--blue);
+    padding: 0.2rem;
+    border-radius: 20px;
+  
+    button {
+      border: none;
+      background: none;
+      color: #FFF;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0 0.5rem;
+      opacity: 0.8;
+  
+      &:hover,
+      &.is-active {
+        opacity: 1;
+      }
+    }
+  }
+  
+  .floating-menu {
+    display: flex;
+    background-color: var(--dark-grey);
+    padding: 0.2rem;
+    border-radius: 20px;
+  
+    button {
+      border: none;
+      background: none;
+      color: var(--text);
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0 0.2rem;
+      opacity: 0.8;
+  
+      &:hover,
+      &.is-active {
+        opacity: 1;
+      }
+    }
+  }
+
+  @media (max-width: 836px) {
+    .tiptap-box {
+      width: 100%;
+    }
+
+    .tiptap {
+      width: 100%;
+    }
+
+    .tiptap img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }

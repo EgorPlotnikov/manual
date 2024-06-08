@@ -1,0 +1,46 @@
+.slim-container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.slim-container h1 {
+    margin-top: 64px;
+}
+
+.create-tutorial-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.create-tutorial-box-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.buttons-select-box {
+    display: flex;
+    gap: 32px;
+    width: 800px;
+}
+
+@media (max-width: 896px) {
+    .create-tutorial-box-heading {
+        width: 100%;
+    }
+
+    .buttons-select-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 580px) {
+    .buttons-select-box {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}
