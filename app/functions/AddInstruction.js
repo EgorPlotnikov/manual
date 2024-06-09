@@ -1,7 +1,10 @@
 'use server'
 import { revalidatePath } from 'next/cache'
+import GetHostname from './GetHostname';
 
 export async function AddData(heading, author, text, make, model) {
+    let hostname = GetHostname();
+
     let today = new Date();
     let date = `${today.getDate()}/${today.getMonth() + 1}/${today.getFullYear()}`;
     let links = []
@@ -10,8 +13,8 @@ export async function AddData(heading, author, text, make, model) {
 
     if (heading && author && text && date && links && make && model) {
       try {
-        revalidatePath(`http://localhost:3000/api/addInstruction`);
-        let response = await fetch("http://localhost:3000/api/addInstruction", {
+        revalidatePath(`${hostname}/api/addInstruction`);
+        let response = await fetch(`${hostname}/api/addInstruction`, {
             method: "POST",
             body: JSON.stringify({
               heading, 
